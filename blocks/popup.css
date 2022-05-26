@@ -147,11 +147,15 @@
     line-height: 21.78px;
   }
 
+  .popup__create-container {
+    padding: 25px 22px;
+  }
+
   .popup__edit-container {
     padding: 25px 22px;
   }
 
-  .popup__close {
+  .popup__close-button {
     top: -40px;
     right: 0px;
     width: 26px;
@@ -169,9 +173,5 @@
     line-height: 16.94px;
     margin-top: 15px;
     height: 46px;
-  }
-
-  .popup__form {
-    height: 183px;
   }
 }
