@@ -105,19 +105,19 @@ const closeButtons = document.querySelectorAll(".popup__close-button");
 closeButtons.forEach((button) => {
   // find the closest popup
   const popup = button.closest(".popup");
-  // set the listener
+
+  // button doesnt toggle when in seperate functions
+
   button.addEventListener("click", () => toggleModalVisibility(popup));
 });
 
 const createCardElement = (data) => {
   const cardElement = cardTemplate.cloneNode(true);
-  const likeButton = cardElement.querySelector(".card__like-button");
   const deleteButton = cardElement.querySelector(".card__delete-button");
 
   const imagePreview = cardElement.querySelector(".card__image");
   const imagePreviewTitle = cardElement.querySelector(".card__title");
 
-  //imagePreview.src = data.link;
   imagePreviewTitle.textContent = data.name;
 
   cardElement.querySelector(
